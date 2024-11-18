@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameHub - Home</title>
+    <link rel="stylesheet" href="Main.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="nav-title">
+                <h2>GameHub</h2>
+            </div>
+            <div class="links">
+                <a href="/Main/Main.html">Home</a>
+                <a href="/games/Games.html">Games</a>
+                <a href="/contact/Contact.html">Contact</a>
+                <a href="/about/About.html">About Us</a>
+            </div>
+            <div class="hamburgerMenu">
+                <label for="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </label>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="text-container">
+            <h2>Check out our games!</h2>
+        </div>
+        <div class="slider-container">
+            <input type="radio" name="slider" id="slide1" checked>
+            <input type="radio" name="slider" id="slide2">
+            <input type="radio" name="slider" id="slide3">
+
+            <div class="slides">
+                <div class="slide" id="image1">
+                    <img src="/Games/Images/2048.png" alt="Image 1">
+                </div>
+                <div class="slide" id="image2">
+                    <img src="/Games/Images/dinos.png" alt="Image 2">
+                </div>
+                <div class="slide" id="image3">
+                    <img src="/Games/Images/snake.jpeg" alt="Image 3">
+                </div>
+            </div>
+            <div class="navigation">
+                <label for="slide1" class="nav-dot"></label>
+                <label for="slide2" class="nav-dot"></label>
+                <label for="slide3" class="nav-dot"></label>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 GameHub. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

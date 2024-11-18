@@ -1,0 +1,154 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    background: #385170;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    background-color: #9fd3c7;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8em;
+    color: #fff;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+nav {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin-left: auto;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 20px 25px; 
+    font-size: 18px;
+    display: block; 
+    transition: background-color 0.3s ease;
+    height: 100%; 
+    line-height: 75px;
+
+}
+
+nav a:hover {
+    background-color: #385170; 
+    position: relative;
+}
+
+.contenedor {
+    width: 920px;
+    height: 280px;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(#B7D6C7, #FFE2D1);
+    margin-top: 80px; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    border-radius: 8px; 
+}
+
+.dino {
+    width: 84px;
+    height: 84px;
+    position: absolute;
+    bottom: 22px;
+    left: 42px;
+    z-index: 2;
+    background: url(/Games/Dino/Dimages/dino.png) repeat-x 0px 0px;
+    background-size: 336px 84px;
+    background-position-x: 0px;
+}
+
+.dino-corriendo {
+    animation: animarDino 0.25s steps(2) infinite;
+}
+
+.dino-estrellado {
+    background-position-x: -252px;
+}
+
+.suelo {
+    width: 200%;
+    height: 42px;
+    position: absolute;
+    bottom: 0;
+    left: 50;
+    background: url(/Games/Dino/Dimages/suelo.png) repeat-x 0px 0px;
+    background-size: 50% 42px;
+}
+
+.score {
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    z-index: 10;
+    color: #D48872;
+    font-family: Verdana;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: right;
+}
+
+.cactus {
+    width: 70px;
+    height: 96px;
+    position: absolute;
+    bottom: 16px;
+    left: 600px;
+    z-index: 1;
+    background: url(/Games/Dino/Dimages/Cactus1.png) no-repeat;
+}
+
+.cactus2 {
+    width: 98px;
+    height: 66px;
+    background: url(/Games/Dino/Dimages/cactus2.png) no-repeat;
+}
+
+.nube {
+    width: 92px;
+    height: 20px;
+    position: absolute;
+    z-index: 0;
+    background: url(/Games/Dino/Dimages/nube.png) no-repeat;
+    background-size: 92px 26px;
+}
+
+@keyframes animarDino {
+    from {
+        background-position-x: -84px;
+    }
+    to {
+        background-position-x: -252px;
+    }
+}
